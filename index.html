@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Web-Ui</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+
+        <nav class="navbar">
+          <button class="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="index.html">Web Mine</a>
+        </nav>
+      </header>
+
+      <!-- <nav class="navigation"> -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a id="nav-links" href="#one">Avatar</a>
+        <a id="nav-links" href="#two">Alerts</a>
+        <a id="nav-links" href="#three">Badge</a>
+        <a id="nav-links" href="#four">Button</a>
+        <a id="nav-links" href="#five">Card</a>
+        <a id="nav-links" href="#six">Images</a>
+        <a id="nav-links" href="#seven">Lists</a>
+        <a id="nav-links" href="#eight">Navigation</a>
+        <a id="nav-links" href="#nine">Grids</a>
+        <a id="nav-links" href="#ten">Input</a>
+        <a id="nav-links" href="#eleven">Modal</a>
+        <a id="nav-links" href="#twelve">Rating</a>
+        <a id="nav-links" href="#thirteen">Text Utility</a>
+        <a id="nav-links" href="#fourteen">Toast</a>
+      </div>
+      <!-- </nav> -->
+
+      <div class="main">
+     
+
+        <section id="one">
+          <h2>Avatar</h2>
+          <p>
+            The Avatar components is used to represent a user, and displays the
+            profile picture, initials or fallback icon..
+          </p>
+          <div class="one">
+            <img class="avatar sm" src="images/avatar1.png" alt="" />
+            <img class="avatar md" src="./images/avatargirl.png" alt="" />
+            <img class="avatar lg" src="./images/avatar3.png" alt="" />
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520sm%2522%2520src%253D%2522images%252Favatar1.png%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520md%2522%2520src%253D%2522.%252Fimages%252Favatargirl.png%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520lg%2522%2520src%253D%2522.%252Fimages%252Favatar3.png%2522%2520alt%253D%2522%2522%2520%252F%253E"
+            style="
+              width: 700px;
+              height: 213px;
+              border: 4px;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="two">
+          <h2>Alerts</h2>
+          <p>
+            The Alert component Provide contextual feedback messages for typical
+            user actions with the handful of available and flexible alert
+            messages.
+          </p>
+          <div class="two">
+            <div class="alert alert-primary">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary">
+              A simple secondary alert—check it out!
+            </div>
+            <div class="alert alert-success">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger">
+              A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning">
+              A simple warning alert—check it out!
+            </div>
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520A%2520simple%2520primary%2520alert%25E2%2580%2594check%2520itout%21%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520A%2520simple%2520secondary%2520alert%25E2%2580%2594check%2520itout%21%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520A%2520simple%2520success%2520alert%25E2%2580%2594check%2520itout%21%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520A%2520simple%2520danger%2520alert%25E2%2580%2594check%2520itout%21%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520A%2520simple%2520warning%2520alert%25E2%2580%2594check%2520itout%21%250A%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 700px;
+              height: 500px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="three">
+          <h2>Badge</h2>
+          <p>
+            The Badge components contain Badges which are small circles,
+            positioned either at top-right or bottom-right of the parent
+            component. Badge can be used to display numbers, online / offline
+            status, depending on where they are used.
+          </p>
+          <div class="three">
+            <!-- icon-badge -->
+            <a href="#" class="notification">
+              <span><i class="fas fa-shopping-cart fa-lg"></i></span>
+              <span class="badge">3</span>
+            </a>
+
+            <!-- online  -->
+            <div class="badge">
+              <div class="online-image">
+                <img class="avtar" src="./images/avatar1.png" alt="Online" />
+                <div class="online-profile"></div>
+              </div>
+            </div>
+
+            <!-- OFFLINE  -->
+
+            <div class="badge">
+              <div class="offline-image">
+                <img class="avtar" src="./images/avatar1.png" alt="Offline " />
+                <div class="offline-profile"></div>
+              </div>
+            </div>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253C%21--%2520icon-badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522notification%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-lg%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%253C%21--%2520online%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522online-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avtar%2522%2520src%253D%2522.%252Fimages%252Favatar1.png%2522%2520alt%253D%2522Online%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522online-profile%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253C%21--%2520offline%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522offline-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avtar%2522%2520src%253D%2522.%252Fimages%252Favatar1.png%2522%2520alt%253D%2522Offline%2520%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522offline-profile%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="
+              width: 854px;
+              height: 627px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="four">
+          <h2>Button</h2>
+          <p>
+            The Button component is used to trigger an action or event, such as
+            submitting a form, opening a dialog, canceling an action, or
+            performing a delete operation.
+          </p>
+
+          <div class="four">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-light">Light</button>
+            <button class="btn btn-dark">Dark</button>
+            <button class="btn btn-float">+</button>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-float%2522%253E%252B%253C%252Fbutton%253E"
+            style="
+              width: 854px;
+              height: 351px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="five">
+          <div class="five">
+            <h2>Card</h2>
+            <p>
+              The Card components contains cards which is a flexible and
+              extensible content container. It includes options for headers and
+              footers, a wide variety of content, contextual background colors,
+              and powerful display options. If you’re familiar with Bootstrap 3,
+              cards replace our old panels, wells, and thumbnails. Similar
+              functionality to those components is available as modifier classes
+              for cards.
+            </p>
+
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images/definitenot.jpg"
+                alt="Men's T-shirt"
+              />
+
+              <div class="wishlist">
+                <span class="wishlist-icon"
+                  ><i class="far fa-heart fa-lg"></i
+                ></span>
+              </div>
+
+              <div class="card-body">
+                <h3 class="product-name">
+                  Men's T-shirt <small>(MN Edition)</small>
+                </h3>
+
+                <div class="product-price">
+                  <p class="discounted-price">
+                    Rs 599 <small class="original-price">Rs 899</small>
+                  </p>
+                  <p class="discount">30% Off hurry up!</p>
+                </div>
+              </div>
+              <button class="add-to-cart btn-card">Add To Cart</button>
+            </div>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522card-img-top%2522%2520src%253D%2522.%252Fimages%252Fdefinitenot.jpg%2522%2520%2520alt%253D%2522Men%27s%2520T-shirt%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wishlist%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522wishlist-icon%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2520fa-lg%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522product-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Men%27s%2520T-shirt%2520%253Csmall%253E%28MN%2520Edition%29%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discounted-price%2522%253ERs%2520599%2520%253Csmall%2520class%253D%2522original-price%2522%253ERs%2520899%253C%252Fsmall%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E%252030%2525%2520Off%2520hurry%2520up%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522%2520add-to-cart%2520btn-card%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 854px;
+              height: 520px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+              margin-top: 1rem;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="six">
+          <div class="six">
+            <h2>Responsive Images</h2>
+            <div class="ractangular">
+              <h4>Ractangular Image</h4>
+              <img src="./images/hz-image.jpeg" />
+            </div>
+
+            <div class="circular">
+              <h4>Rounded Image</h4>
+              <img src="./images/hz-image.jpeg" />
+            </div>
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522ractangular%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253E%2520Ractangular%2520Image%2520%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fimages%252Fhz-image.jpeg%2522%2520%252F%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522circular%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253E%2520Rounded%2520Image%2520%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fimages%252Fhz-image.jpeg%2522%2520%252F%253E%250A%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 700px;
+              height: 351px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="seven">
+          <div class="seven">
+            <h2>Lists</h2>
+            <h4>Basic List Group</h4>
+
+            <ul class="list-group">
+              <li class="list-item">First item</li>
+              <li class="list-item">Second item</li>
+              <li class="list-item">Third item</li>
+            </ul>
+            <h4>Active List</h4>
+
+            <a href="#" class="active-list-item">First Item</a>
+            <a href="#" class="active-list-item">Second Item</a>
+            <a href="#" class="active-list-item">Third Item</a>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%253Ch4%253EBasic%2520List%2520Group%253C%252Fh4%253E%250A%2520%2520%2520%253Cul%2520class%253D%2522list-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EFirst%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ESecond%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EThird%2520item%253C%252Fli%253E%250A%2520%2520%2520%253C%252Ful%253E%250A%2520%253Ch4%253EActive%2520List%253C%252Fh4%253E%250A%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active-list-item%2522%253EFirst%2520Item%253C%252Fa%253E%250A%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active-list-item%2522%253ESecond%2520Item%253C%252Fa%253E%250A%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active-list-item%2522%253EThird%2520Item%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 762px;
+              height: 397px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="eight">
+          <div class="eight">
+            <h2>Navigation</h2>
+            <nav class="nav-bar">
+              <ul class="container">
+                <li>WebMine</li>
+                <li class="search">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search"
+                  />
+                </li>
+                <li>Signin</li>
+                <li>SignUp</li>
+              </ul>
+            </nav>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-bar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EWebMine%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522search-input%2522%2520placeholder%253D%2522Search%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESignin%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESignUp%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 738px;
+              height: 397px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="nine">
+          <div class="nine">
+            <h2>Grid</h2>
+            <div class="grid-two-group">
+              <div class="grid-item">item1</div>
+              <div class="grid-item">item2</div>
+            </div>
+
+            <div class="grid-three-group">
+              <div class="grid-item">item1</div>
+              <div class="grid-item">item2</div>
+              <div class="grid-item">item2</div>
+            </div>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-two-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253Eitem1%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253Eitem2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522grid-three-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253Eitem1%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253Eitem2%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253Eitem2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 700px;
+              height: 374px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="ten">
+          <div class="ten">
+            <h2>Input</h2>
+            <form
+              class="input-form"
+              name="myform"
+              method="post"
+              onsubmit="return validateform()"
+            >
+              Name: <input type="text" name="name" /><br />
+              Password: <input type="password" name="password" /><br />
+              <input type="submit" value="register" />
+            </form>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%253Cform%2520class%253D%2522input-form%2522%250A%2520%2520%2520%2520%2520%2520%2520name%253D%2522myform%2522%250A%2520%2520%2520%2520%2520%2520%2520method%253D%2522post%2522%250A%2520%2520%2520%2520%2520%2520%2520onsubmit%253D%2522return%2520validateform%28%29%2522%250A%2520%2520%253E%250A%2520%2520%2520Name%253A%2520%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522name%2522%2520%252F%253E%253Cbr%2520%252F%253E%250A%2520%2520%2520Password%253A%2520%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520%252F%253E%253Cbr%2520%252F%253E%250A%2520%2520%2520%253Cinput%2520type%253D%2522submit%2522%2520value%253D%2522register%2522%2520%252F%253E%250A%253C%252Fform%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 700px;
+              height: 374px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="eleven">
+          <div class="eleven">
+            <h2>Modal Example</h2>
+            <button id="myBtn">Open Modal</button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Text in the Modal..</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522myBtn%2522%253EOpen%2520Modal%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EText%2520in%2520the%2520Modal..%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 719px;
+              height: 351px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="twelve">
+          <div class="twelve">
+            <h2>Rating</h2>
+            <h4>Read Only</h4>
+
+            <div>
+              <span class="fa fa-star colored"></span>
+              <span class="fa fa-star colored"></span>
+              <span class="fa fa-star colored"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <h4>Controlled</h4>
+
+            <div>
+              <span class="fa fa-star focused"></span>
+              <span class="fa fa-star focused"></span>
+              <span class="fa fa-star focused"></span>
+              <span class="fa fa-star focused"></span>
+              <span class="fa fa-star focused"></span>
+            </div>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%253Ch4%253ERead%2520Only%253C%252Fh4%253E%250A%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520colored%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520colored%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520colored%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fspan%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Ch4%253EControlled%253C%252Fh4%253E%250A%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520focused%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520focused%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520focused%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520focused%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520focused%2522%253E%253C%252Fspan%253E%250A%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 719px;
+              height: 535px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="thirteen">
+          <div class="thirteen">
+            <h2>Text Utilities</h2>
+            <h4>Headings and Small Text</h4>
+            <div class="smallHeading">
+              <h1>h1 heading(32px)<small>SmallText</small></h1>
+              <h2>h2 heading(24px)<small>SmallText</small></h2>
+              <h3>h3 heading(18px)<small>SmallText</small></h3>
+              <h4>h4 heading(16px)<small>SmallText</small></h4>
+              <h5>h5 heading(13px)<small>SmallText</small></h5>
+              <h6>h6 heading(12px)<small>SmallText</small></h6>
+            </div>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%253Ch1%253Eh1%2520heading%2832px%29%253Csmall%253ESmallText%253C%252Fsmall%253E%253C%252Fh1%253E%250A%2520%253Ch2%253Eh2%2520heading%2824px%29%253Csmall%253ESmallText%253C%252Fsmall%253E%253C%252Fh2%253E%250A%2520%253Ch3%253Eh3%2520heading%2818px%29%253Csmall%253ESmallText%253C%252Fsmall%253E%253C%252Fh3%253E%250A%2520%253Ch4%253Eh4%2520heading%2816px%29%253Csmall%253ESmallText%253C%252Fsmall%253E%253C%252Fh4%253E%250A%2520%253Ch5%253Eh5%2520heading%2813px%29%253Csmall%253ESmallText%253C%252Fsmall%253E%253C%252Fh5%253E%250A%2520%253Ch6%253Eh6%2520heading%2812px%29%253Csmall%253ESmallText%253C%252Fsmall%253E%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 719px;
+              height: 305px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+
+        <section id="fourteen">
+          <div class="fourteen">
+            <h2>Toast</h2>
+            <button id="toastBtn" class="btn-toast">Click me</button>
+            <div id="toast-body" class="toastBody">
+              <small
+                >Time to get started!
+                <span id="closeBtn" class="closeBtn">&times;</span></small
+              >
+            </div>
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%2520%253Cbutton%2520id%253D%2522toastBtn%2522%2520class%253D%2522btn-toast%2522%253EClick%2520me%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520id%253D%2522toast-body%2522%2520class%253D%2522toastBody%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Csmall%253ETime%2520to%2520get%2520started%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520id%253D%2522closeBtn%2522%2520class%253D%2522closeBtn%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+            style="
+              width: 719px;
+              height: 305px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        Made with Love Yogesh
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
