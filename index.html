@@ -376,12 +376,10 @@
             <h2>Input</h2>
             <form
               class="input-form"
-              name="myform"
-              method="post"
               onsubmit="return validateform()"
             >
-              Name: <input type="text" name="name" /><br />
-              Password: <input type="password" name="password" /><br />
+              Name: <input id="name" type="text"  /><br />
+              Password: <input id="password" type="password" /><br />
               <button type="submit" class="btn btn-success">Register</button>
             </form>
           </div>
@@ -402,7 +400,7 @@
 
         <section id="eleven">
           <div class="eleven">
-            <h2>Modal Example</h2>
+            <h2>Modal</h2>
             <button id="myBtn">Open Modal</button>
             <div id="myModal" class="modal">
               <div class="modal-content">
@@ -509,6 +507,7 @@
               width: 719px;
               height: 305px;
               border: 0;
+              margin-top: 1rem;
               transform: scale(1);
               overflow: hidden;
             "
@@ -520,9 +519,9 @@
     </div>
 
     <footer>
-      <div>
-        Made with Love Yogesh
-      </div>
+      <strong>
+        More Components Coming Soon...
+      </strong>
     </footer>
     <script src="script.js"></script>
   </body>
