@@ -631,7 +631,7 @@ li {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: sticky; /* Stay in place */
-  z-index: 1; /*Stay on top */
+  z-index: 10; /*Stay on top */
   top: 50px;
   left: 0;
   background-color: var(--color-secondary-dark); /* Black*/
@@ -684,15 +684,17 @@ li {
   .sidebar {
     width: 250px;
     position: fixed;
-  }
+  } 
   .main {
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .sidebar {
-    visibility: hidden;
+    height: 100vh;
+    visibility:visible;
   }
 }
 

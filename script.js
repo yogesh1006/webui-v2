@@ -42,12 +42,12 @@ window.onclick = function(event) {
 var toastBtn=document.getElementById("toastBtn");
 
 var bodyToast=document.getElementById("toast-body")
+var btnClose=document.getElementById("closeBtn")
 
 toastBtn.onclick=function(){
     bodyToast.style.display="block";
 }
 
-var btnClose=getElementById("closeBtn")
 
 btnClose.onclick=function(){
     bodyToast.style.display="none";
