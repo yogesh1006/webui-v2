@@ -344,6 +344,7 @@ li {
   border: 2px solid rgb(240, 225, 225);
   box-shadow: 0 4px 8px 0 rgba(250, 242, 242, 0.2);
   transition: box-shadow 0.2s ease-in-out;
+  padding-bottom: 0.3rem;
 }
 .card-body {
   padding-left: 0.5rem;
@@ -367,7 +368,10 @@ li {
   border-radius: 5px;
   border: none;
 }
+.product-name small{
+  font-size: 0.7rem;
 
+}
 .wishlist-icon {
   position: absolute;
   top: 10px;
@@ -380,7 +384,7 @@ li {
 
 .original-price {
   text-decoration: line-through;
-  padding: 0.5rem;
+  color: #818181;
 }
 
 /* rxetcyvubinjmok */
