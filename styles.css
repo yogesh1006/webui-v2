@@ -626,14 +626,14 @@ li {
 }
 
 .closeBtn {
-  font-size: 15px;
-  color: gray;
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  color: black;
   cursor: pointer;
 }
 
 .closeBtn:hover {
-  color: white;
-  border: 1px solid white;
+  color: #000;
 }
 
 /* // sidebar// */
