@@ -1,0 +1,18 @@
+  .toastBody {
+    display: none;
+    position: relative;
+    padding: 1rem;
+    width: max-content;
+    margin-top: 0.5rem;
+    background-color: var(--color-dark);
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+
+  .closeBtn {
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+  }

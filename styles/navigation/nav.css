@@ -1,0 +1,35 @@
+nav{
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    margin-bottom: 0.5rem;
+ }
+ .nav-dark{
+     background-color: var(--color-dark);
+     color: var(--color-white);
+ }
+ .nav-outlined{
+     border: 1px solid rgba(0,0,0,0.1);
+ }
+ .nav-list{
+     flex-basis: 100%;
+ }
+ 
+ @media only screen and (min-width: 768px){
+     .nav{
+         gap: 1rem;
+         padding: 1.5rem 1rem;
+         font-size: 1rem;
+     }
+     .nav-list{
+         display: flex !important;
+         flex-basis: auto;
+         gap: 0.5rem;
+         margin: 5px;
+     }
+ }
