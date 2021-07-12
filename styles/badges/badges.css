@@ -1,0 +1,61 @@
+.badge-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.notification {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -10px;
+    left:20px;
+    padding: 0.3rem;
+    justify-content: center;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: var(--color-success);
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  .badge {
+    display: flex;
+    position: relative;
+  }
+  
+  .badge .online-image .avtar {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .badge .offline-image .avtar {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .online-profile {
+    position: absolute;
+    background-color: var(--color-success);
+    border: 2px solid white;
+    border-radius: 50%;
+    top: 50px;
+    left: 43px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .offline-profile {
+    position: absolute;
+    background-color: var(--color-grey-dark);
+    border: 2px solid white;
+    border-radius: 50%;
+    top: 50px;
+    left: 43px;
+    height: 20px;
+    width: 20px;
+  }
+  

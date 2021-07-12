@@ -1,0 +1,37 @@
+.btn {
+    padding: 0.6rem;
+    color: white;
+    width: fit-content;
+    border: none;
+    margin: 1rem;
+    outline: none;
+    font-weight: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: var(--secondary-color);
+  }
+  .btn-secondary {
+    background-color: var(--color-grey);
+  }
+  .btn-success {
+    background-color: var(--color-success);
+  }
+  .btn-danger {
+    background-color:var(--color-danger);
+  }
+  .btn-warning {
+    background-color: var(--color-warning);
+  }
+  .btn-info {
+    background-color:var(--color-info);
+  }
+  .btn-light {
+    background-color: var(--color-light);
+    color: black;
+  }
+  .btn-dark {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+  }

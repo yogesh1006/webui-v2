@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Web-UI</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>WEB-UI</h1>
+        <button class="toggle toggle-blue" onclick="toggle('toggle-list')">
+          <i class="fas fa-bars fa-2x" style="color: white"></i>
+        </button>
+        <ul class="toggle-list" id="toggle-list" style="display: none">
+          <a href="#navigation">
+            <li class="sidebar-list-item">Navigation</li>
+          </a>
+          <a href="#buttons">
+            <li class="sidebar-list-item">Buttons</li>
+          </a>
+          <a href="#alerts">
+            <li class="sidebar-list-item">Alerts</li>
+          </a>
+          <a href="#badges">
+            <li class="sidebar-list-item">Badge</li>
+          </a>
+          <a href="#lists">
+            <li class="sidebar-list-item">List</li>
+          </a>
+          <a href="#avatars">
+            <li class="sidebar-list-item">Avatar</li>
+          </a>
+          <a href="#typography">
+            <li class="sidebar-list-item">Typography</li>
+          </a>
+          <a href="#cards">
+            <li class="sidebar-list-item">Card</li>
+          </a>
+          <a href="#images">
+            <li class="sidebar-list-item">Images</li>
+          </a>
+          <a href="#toast">
+            <li class="sidebar-list-item">Toast</li>
+          </a>
+          <a href="#modals">
+            <li class="sidebar-list-item">Modal</li>
+        </a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <nav>
+          <ul class="sidebar-list-group">
+            <a href="#navigation">
+              <li class="sidebar-list-item">Navigation</li>
+            </a>
+            <a href="#buttons">
+              <li class="sidebar-list-item">Buttons</li>
+            </a>
+            <a href="#alerts">
+              <li class="sidebar-list-item">Alerts</li>
+            </a>
+            <a href="#badges">
+              <li class="sidebar-list-item">Badge</li>
+            </a>
+            <a href="#lists">
+              <li class="sidebar-list-item">List</li>
+            </a>
+            <a href="#avatars">
+              <li class="sidebar-list-item">Avatar</li>
+            </a>
+            <a href="#typography">
+              <li class="sidebar-list-item">Typography</li>
+            </a>
+            <a href="#cards">
+              <li class="sidebar-list-item">Card</li>
+            </a>
+            <a href="#images">
+              <li class="sidebar-list-item">Images</li>
+            </a>
+            <a href="#toast">
+                <li class="sidebar-list-item">Toast</li>
+            </a>
+            <a href="#modals">
+                <li class="sidebar-list-item">Modal</li>
+            </a>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+         <!-- NAVABAR -->
+         <div class="component" id="navigation">
+          <h1>Navigation</h1>
+          <p class="definition">
+            Website navigation allows visitors to flow from one page to another
+          </p>
+
+          <nav class="nav nav-dark">
+            <h3>Navbar</h3>
+            <button class="toggle" onclick="toggle('nav-list')">
+              <i class="fas fa-bars fa-lg" style="color: white"></i>
+            </button>
+            <ul class="nav-list" id="nav-list">
+              <li>Login</li>
+              <li>SignUp</li>
+              <li>About</li>
+            </ul>
+          </nav>
+
+          <div class="display-none">
+            <div onclick="showSourceCode('navbar-filled')" class="pre-div">
+              <i class="fas fa-angle-double-right"></i>
+            </div>
+
+            <div id="navbar-filled" class="pre-tag" style="display: none">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28129%2C175%2C230%2C1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=37px&ph=54px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%253Cnav%2520class%253D%2522nav%2520nav-dark%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%253ENavbar%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522toggle%2522%2520onclick%253D%2522toggle%28%27nav-list%27%29%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520fa-lg%2522%2520style%253D%2522color%253A%2520white%253B%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-list%2522%2520id%253D%27nav-list%27%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ELogin%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESignUp%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%253C%252Fnav%253E"
+                style="
+                  width: 100%;
+                  height: 379px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+           </div>
+         </div>
+
+        <div class="component" id="buttons">
+          <h1>Buttons</h1>
+          <p class="definition">
+            Buttons are a middleman between the user and the product, and are
+            charged with keeping the conversation between person and machine
+            going.
+          </p>
+
+          <!-- FILLED BUTTONS -->
+          <div class="category">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-dark">Dark</button>
+          </div>
+
+          <div class="display-none">
+            <div onclick="showSourceCode('filled-button')" class="pre-div">
+              <i class="fas fa-angle-double-right"></i>
+            </div>
+
+            <div id="filled-button" class="pre-tag" style="display: none">
+              <iframe
+                src="https://carbon.now.sh/embed/AJSv4M1dMHoN1To8EB9s"
+                style="
+                  width: 100%;
+                  height: 348px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- ALERTS -->
+        <div class="component" id="alerts">
+          <h1>Alert</h1>
+          <p class="definition">Alerts are push notifications</p>
+
+          <div class="alert alert-primary">I am Primary alert</div>
+          <div class="alert alert-secondary">I am Secondary alert</div>
+          <div class="alert alert-info">I am Info alert</div>
+          <div class="alert alert-warning">I am Warning Alert</div>
+          <div class="alert alert-success">I am Success alert</div>
+          <div class="alert alert-danger">I am Danger alert</div>
+
+          <div class="display-none">
+            <div onclick="showSourceCode('alertscode')" class="pre-div">
+              <i class="fas fa-angle-double-right"></i>
+            </div>
+
+            <div class="pre-tag" id="alertscode" style="display: none">
+              <iframe
+                src="https://carbon.now.sh/embed/kE2CZFsm0MoxHnCcunHx"
+                style="
+                  width: 100%;
+                  height: 510px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="component" id="badges">
+          <h1>Badges</h1>
+          <p class="definition">
+            The Badge components contain Badges which are small circles,
+            positioned either at top-right or bottom-right of the parent
+            component. Badge can be used to display numbers, online / offline
+            status, depending on where they are used.
+          </p>
+          <!-- icon-badge -->
+          <div class="badge-wrapper">
+          <a href="#" class="notification">
+            <span><i class="fas fa-shopping-cart fa-2x"></i></span>
+            <span class="badge">3</span>
+          </a>
+
+          <!-- online  -->
+          <div class="badge">
+            <div class="online-image">
+              <img class="avtar" src="./assets/avatar1.png" alt="Online" />
+              <div class="online-profile"></div>
+            </div>
+          </div>
+
+          <!-- offline -->
+          <div class="badge">
+            <div class="offline-image">
+              <img class="avtar" src="./assets/avatar1.png" alt="Offline " />
+              <div class="offline-profile"></div>
+            </div>
+          </div>
+
+        </div>
+          <div class="display-none">
+            <div onclick="showSourceCode('badgecode')" class="pre-div">
+              <i class="fas fa-angle-double-right"></i>
+            </div>
+
+            <div class="pre-tag" id="badgecode" style="display: none">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=35px&ph=36px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=175%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253C%21--%2520icon-badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522notification%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-lg%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%253C%21--%2520online%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522online-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avtar%2522%2520src%253D%2522.%252Fimages%252Favatar1.png%2522%2520alt%253D%2522Online%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522online-profile%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253C%21--%2520offline%2520--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522offline-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avtar%2522%2520src%253D%2522.%252Fimages%252Favatar1.png%2522%2520alt%253D%2522Offline%2520%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522offline-profile%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  width: 100%;
+                  height: 627px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- List Group -->
+        <div class="component" id="lists">
+          <h1>Stacked List Group</h1>
+          <p class="definition">Display a list of text</p>
+          <ul class="list-group">
+            <li class="list-item">Item 1</li>
+            <li class="list-item">Item 2</li>
+            <li class="list-item">Item 3</li>
+            <li class="list-item">Item 4</li>
+            <li class="list-item">Item 5</li>
+          </ul>
+
+          <div class="display-none">
+            <div onclick="showSourceCode('list')" class="pre-div">
+              <i class="fas fa-angle-double-right"></i>
+            </div>
+            <div class="pre-tag" id="list" style="display: none">
+              <iframe
+                src="https://carbon.now.sh/embed/OjUQxiJ6VnVUu2rGnrei"
+                style="
+                  width: 100%;
+                  height: 330px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="component">
+          <h1>Spaced List Group</h1>
+          <p class="definition">Display a list of text</p>
+        </div>
+
+        <ul class="list-group">
+          <li class="list-item spaced">Item 1</li>
+          <li class="list-item spaced">Item 2</li>
+          <li class="list-item spaced">Item 3</li>
+          <li class="list-item spaced">Item 4</li>
+          <li class="list-item spaced">Item 5</li>
+        </ul>
+
+        <div class="display-none">
+          <div onclick="showSourceCode('spaced-list')" class="pre-div">
+            <i class="fas fa-angle-double-right"></i>
+          </div>
+          <div class="pre-tag" id="spaced-list" style="display: none">
+                    <iframe
+                    src="https://carbon.now.sh/embed/QMlHqCGpq7iGO2b5JWM7"
+                    style="
+                        width: 100%;
+                        height: 330px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+           </div>
+         </div>
+
+
+          <!-- AVATAR -->
+          <div class="component" id="avatars">
+                <h1>Avatar</h1>
+                <p class="definition">An avatar is a representation of who we are or our fictional character. </p>
+                <div class="category">
+                    <img src="./assets/avatar1.png" class="avatar avatar-sm" />
+                    <img src="./assets/avatargirl.png" class="avatar avatar-md" />
+                    <img src="./assets/avatar3.png" class="avatar avatar-lg" />
+                </div>
+
+                <div class="display-none">
+
+                    <div onclick="showSourceCode('avatars-Code')" class="pre-div">
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                    <div class="pre-tag" id='avatars-Code' style="display: none;">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28129%2C175%2C230%2C1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=37px&ph=54px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522category%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%2520class%253D%2522avatar%2520avatar-sm%2522%2520%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Favatargirl.png%2522%2520class%253D%2522avatar%2520avatar-md%2522%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Favatar3.png%2522%2520class%253D%2522avatar%2520avatar-lg%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 253px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Typography -->
+            <div class="component" id="typography">
+                  <h1>Typography</h1>
+                  <p class="definition">Different font sizes</p>
+                  <div class="category flex-column">
+                        <h1>HEADING 1</h1>
+                        <h2>HEADING 2</h2>
+                        <h3>HEADING 3</h3>
+                        <h4>HEADING 4</h4>
+                        <h5>HEADING 5</h5>
+                        <h6>HEADING 6</h6>
+                        <h4>HEADING <span class="muted-text">WITH MUTED TEXT</span></h4>
+                  </div>
+                <div class="display-none">
+                    <div onclick="showSourceCode('heading')" class="pre-div">
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                    <div class="pre-tag" id='heading' style="display: none;">
+                        <iframe src="https://carbon.now.sh/embed/ebGMqIel3HEkRdQuZuDy"
+                            style="width: 100%; height: 348px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARDS -->
+            <div class="component" id="cards">
+                <h1>Cards</h1>
+                <p class="definition"> Cards act as a small rectangle associated to a singular thought. They are full of interactive
+                    elements such as text, links, buttons or images</p>
+                <div class="category">
+
+                    <div class="card card-primary">
+                        <div class="card-header"> Basic Card </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                I am Primary Card
+                            </h5>
+                            <p class="card-text">
+                                Cards are a convenient means of displaying content composed of different types of
+                                objects. They’re also well-suited for presenting similar objects whose size or
+                                supported
+                                actions can vary considerably, like photos with captions of variable length.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-secondary">
+                        <div class="card-header"> Basic Card </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                I am Secondary Card
+                            </h5>
+                            <p class="card-text">
+                                Cards are a convenient means of displaying content composed of different types of
+                                objects. They’re also well-suited for presenting similar objects whose size or
+                                supported
+                                actions can vary considerably, like photos with captions of variable length.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-image">
+                        <div class="card-header"> Card Images </div>
+                        <span class="card-position">X</span>
+                        <div class="card-body">
+                            <img src="./assets/one8.jpeg" class="image" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="display-none">
+
+                    <div onclick="showSourceCode('cards-code')" class="pre-div">
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+
+                    <div class="pre-tag" id='cards-code' style="display: none;">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28129%2C175%2C230%2C1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=37px&ph=54px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%2520Basic%2520Card%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-title%2522%253EI%2520am%2520Primary%2520Card%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Cards%2520are%2520a%2520convenient%2520means%2520of%2520displaying%2520content%2520composed%2520of%2520different%2520types%2520of%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520objects.%2520They%25E2%2580%2599re%2520also%2520well-suited%2520for%2520presenting%2520similar%2520objects%2520whose%2520size%2520or%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520supported%2520actions%2520can%2520vary%2520considerably%252C%2520like%2520photos%2520with%2520captions%2520of%2520variable%2520length.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522card%2520card-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%2520Basic%2520Card%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-title%2522%253EI%2520am%2520Secondary%2520Card%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Cards%2520are%2520a%2520convenient%2520means%2520of%2520displaying%2520content%2520composed%2520of%2520different%2520types%2520of%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520objects.%2520They%25E2%2580%2599re%2520also%2520well-suited%2520for%2520presenting%2520similar%2520objects%2520whose%2520size%2520or%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520supported%2520actions%2520can%2520vary%2520considerably%252C%2520like%2520photos%2520with%2520captions%2520of%2520variable%2520length.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card%2520card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%2520Card%2520Images%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-position%2522%253EX%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fone8.jpeg%2522%2520class%253D%2522image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A"
+                            style="width: 100%; height: 883px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- IMAGES -->
+             <div class="component" id="images">
+               <h1>Images</h1>
+                <p class="definition">To display responsive images</p>
+               <img src='./assets/hz-image.jpeg' class="image">
+            </div>
+
+             <!-- TOAST -->
+             <div class="component" id="toast">
+                 <h1>Toast</h1>
+                 <p class="definition">The toast component is like an alert box that is only shown for a couple of seconds when something happens (i.e. when the user clicks on a button, submits a form, etc.).</p>
+                    <button onclick="toastToggle('toast-body')" class="btn btn-dark">Click me</button>
+                      <div id="toast-body" class="toastBody">
+                        <h4>This is a toast message!  <span class="closeBtn" onclick="toastToggle('toast-body')">X</span></h4>
+                      </div>
+                    <div class="display-none">
+
+                        <div onclick="showSourceCode('toast-code')" class="pre-div">
+                            <i class="fas fa-angle-double-right"></i>
+                        </div>
+    
+                        <div class="pre-tag" id='toast-code' style="display: none;">
+                          <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28129%2C175%2C230%2C1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=37px&ph=54px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522toast-body%2522%2520class%253D%2522toastBody%2522%253E%250A%2520%2520%253Ch4%253EThis%2520is%2520a%2520toast%2520message%21%2520%2520%250A%2520%2520%2520%253Cspan%2520class%253D%2522closeBtn%2522onclick%253D%2522toastToggle%28%27toast-body%27%29%2522%253EX%253C%252Fspan%253E%250A%2520%2520%253C%252Fh4%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 253px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                          </iframe>
+                        </div>
+                    </div>  
+             </div>
+
+
+
+             <!-- MODAL -->
+                <div class="component" id="modals">
+                    <h1>Modal</h1>
+                    <p class="definition">A modal (also called a modal window or lightbox) is a web page element that displays
+                        in front of and deactivates all other page content.</p>
+
+                    <div class="modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>The Modal plugin is a dialog box/popup window that is displayed on top of the current
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-dark">Save</button>
+                            <button class="btn btn-secondary">Close</button>
+                        </div>
+                    </div>
+
+                    <div class="display-none">
+                        <div onclick="showSourceCode('modal-code')" class="pre-div">
+                            <i class="fas fa-angle-double-right"></i>
+                        </div>
+
+                        <div class="pre-tag" id='modal-code' style="display: none;">
+                            <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28129%2C175%2C230%2C1%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=37px&ph=54px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522modal-title%2522%253EModal%2520Title%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThe%2520Modal%2520plugin%2520is%2520a%2520dialog%2520box%252Fpopup%2520window%2520that%2520is%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520displayed%2520on%2520top%2520of%2520the%2520current%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-dark%2522%253ESave%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                            style="width: 100%; height: 421px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                          </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <a href="https://www.linkedin.com/in/yogesh-kasliwal-8b975a129/" target="_blank"><i
+                        class="fab fa-linkedin icon"></i></a>
+                    <a href="https://github.com/yogesh1006" target="_blank"><i class="fab fa-github icon"></i></a>
+                     <a href="https://twitter.com/yogkas1006" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                </div>
+
+        </div>  
+      </main>
+    </div>
+
+    <script src="functions.js"></script>
+  </body>
+</html>
